@@ -1,3 +1,6 @@
+*{
+    margin: 0;
+}
 div#head{
     font-size: 20px;
     margin-left: 60px;
@@ -6,11 +9,74 @@ div#head{
     line-height: 120px;
     color: #e3a68b;
 }
-div#header{
+.header{
     font-size: 15pt;
-    /*margin-left: 60px;*/
+    position: relative;
+    padding-left: 15px;
     background-color: #898d8e;
     height: 80px;
     line-height: 80px;
     color: #ffffff;
+}
+span.header{
+    padding-left: 45px;
+}
+div.block1{
+    background-color: #b7bcbe;
+    height: 695px;
+    position: relative;
+}
+h2.block1{
+    color: #ffffff;
+    padding-left: 65%;
+    padding-top: 460px;
+    font-size: 55px;
+}
+h3.block1{
+    color: #e3a68b;
+    padding-left: 65%;
+    padding-bottom: 120px;
+    font-size: 35px;
+}
+div.block2{
+    background-color: #ffffff;
+    height: 1780px;
+}
+h2.block2{
+    color: #e3a68b;
+    padding-left: 33%;
+    padding-top: 280px;
+    font-size: 45px;
+}
+span.block2{
+    padding-left: 20%;
+    padding-top: 130px;
+    font-size: 20px;
+    width: 125px;
+    height: 105px;
+    margin:auto;
+}
+figure.block2a{
+    position: absolute;
+    padding-left: 9%;
+    padding-top: 140px;
+}
+figure.block2b{
+    position: absolute;
+    padding-left: 38%;
+    padding-top: 140px;
+}
+figure.block2c{
+    position: absolute;
+    padding-left: 65%;
+    padding-top: 140px;
+}
+h3.block2{          
+    font-size: 30px;
+    padding-top: 60px;
+}
+figcaption{
+    text-align: center;
+    padding-left: 40px;
+    width: 375px;
 }
