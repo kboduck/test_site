@@ -1,7 +1,16 @@
+div#head{
+    font-size: 20px;
+    margin-left: 60px;
+    background-color: #ffffff;
+    height: 120px;
+    line-height: 120px;
+    color: #e3a68b;
+}
 div#header{
-    font-size: 20pt;
+    font-size: 15pt;
+    /*margin-left: 60px;*/
     background-color: #898d8e;
     height: 80px;
     line-height: 80px;
-    color: antiquewhite;
+    color: #ffffff;
 }
