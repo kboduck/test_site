@@ -23,6 +23,7 @@ div#head{ /*Шапка сайта*/
     margin-top: 40px;
     height: 80px;
     line-height: 80px;
+    text-decoration: solid;
 }
 .header a:active, .header a:hover{
     background-color: #7d9097;
@@ -84,19 +85,19 @@ figcaption{             /*Стили для блока с текстом под�
 .block2 figcaption p{   
     padding-top: 75px;  /*Отступы для текста подписи под картинками(стили заголовка установлены отдельно)*/
 }
-.block3{
+.block3{                /*Стили блока со статистикой(2500 happy clients)*/
     background-color: #1f3138;
     height: 345px;
 }
-.block3 span{
+.block3 span{           /*Стили для текста блока со статистикой*/
     color: #88553b;
     font-size: 45px;
     position: absolute;
-    padding-left: 18%;
+    padding-left: 18%;  /*Отступы для первого текстового блока*/
     padding-top: 120px;
 }
 span.block3a{
-    padding-left: 39%;
+    padding-left: 39%;  /*Отступы для второго блока*/
 }
 span.block3b{
     padding-left: 60%;
@@ -104,12 +105,12 @@ span.block3b{
 span.block3c{
     padding-left: 81%;
 }
-.block3 span p{
+.block3 span p{         /*Стили для текста в блоке статистики*/
     color: #ffffff;
     font-size: 20px;
     text-align: center;
 }
-.block5{
+.block5{                /*Блок "Contact us", содержит поля ввода*/
     background-color: #2a3e47;
     height: 1435px;
 }
@@ -165,4 +166,25 @@ button[name="contact"]{
 .block6 img{
     padding-left: 3%;
     padding-top: 360px;
+}
+.block7{                /*Блок About us*/
+    background-color: #f9f9fb;
+    height: 530px;
+    width: 44%;
+    margin-top: 390px;
+    margin-left: 30px;
+    border: solid;
+    border-color: #d2d3d7;
+    border-radius: 1px;
+    position: absolute;
+}
+.block7 span h2{
+    padding-left: 40%;
+    padding-top: 75px;
+}
+.block7 span{
+    padding-left: 23%;
+    padding-top: 40px;
+    width: 64%;
+    height: 50px;
 }
