@@ -12,21 +12,29 @@ div#head{ /*Шапка сайта*/
 }
 .header{
     font-size: 15pt;
-    position: relative;
+    z-index: 10;
     padding-left: 15px;
     background-color: #898d8e;
     height: 80px;
-    color: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.header_scrolled{
+    position: fixed;
+    top: 0;
 }
 .header a{   /*Селекторы главного меню*/
     margin-left: 45px;
-    margin-top: 40px;
     height: 80px;
     line-height: 80px;
-    text-decoration: solid;
+    text-decoration: none;
+    color: #ffffff;
 }
 .header a:active, .header a:hover{
     background-color: #7d9097;
+    color: #302f2f;
+    transition: all .09s ease-out;
 }
 div.block1{     /*Первый блок, содержит надпись Welcome to your company name*/
     background-color: #b7bcbe;
@@ -187,4 +195,23 @@ button[name="contact"]{
     padding-top: 40px;
     width: 64%;
     height: 50px;
+}
+.block7a,.block7b,.block7c{
+    margin-top: 325px;
+}
+.block8{
+    height: 605px;
+}
+.block8 span h2{
+    padding-top: 190px;
+    color: #e3a68b;
+    text-align: center;
+    font-size: 50px;
+}
+.block8 p{
+    padding-top: 100px;
+    text-align: center;
+    width: 79%;
+    margin-left: 12%;
+    font-size: 35px;
 }
