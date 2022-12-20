@@ -59,7 +59,7 @@ div.block2{     /*Блок 2 содержит текст Our team leaders и т�
 }
 h2.block2{      /*Текст Our team leaders*/
     color: #e3a68b;
-    padding-left: 33%;
+    text-align: center;
     padding-top: 280px;
     font-size: 45px;
 }
@@ -125,7 +125,7 @@ span.block3c{
 .block5 span h2{    /*Заголовок Contact us*/
     color: #ffffff;
     font-size: 52px;
-    padding-left: 40%;
+    text-align: center;
     padding-top: 310px;
 }
 .block5 span{   /*Текст после заголовка Contact us*/
@@ -187,7 +187,7 @@ button[name="contact"]{
     position: absolute;
 }
 .block7 span h2{
-    padding-left: 40%;
+    text-align: center;
     padding-top: 75px;
 }
 .block7 span{
@@ -199,19 +199,110 @@ button[name="contact"]{
 .block7a,.block7b,.block7c{
     margin-top: 325px;
 }
-.block8{
+.block8{        /*Блок Our gallery*/
     height: 605px;
 }
-.block8 span h2{
+.block8 span h2{    /*Заголовок блока Our gallery*/
     padding-top: 190px;
     color: #e3a68b;
     text-align: center;
     font-size: 50px;
 }
-.block8 p{
+.block8 p{          /*Текст блока Our gallery*/
     padding-top: 100px;
     text-align: center;
     width: 79%;
     margin-left: 12%;
     font-size: 35px;
+}
+.block10{        /*Блок с кнопками прокрутки для изображений блока номер 9*/
+    height: 80px;
+    background-color: #d6d6d6;
+}
+.block10 p{      /*Стили для рамки вокруг стрелок прокрутки*/
+    position: absolute;
+    border: solid;
+    border-radius: 100%;
+    border-color: #88543a;
+}
+.block10 i{      /*Стрелка прокрутки блока 9*/
+    border: solid #88543a;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.right{     /*Стили для правой стрелки*/
+    margin-left: 94%;
+    margin-top: 10px;
+    padding: 20px;
+}
+.left{      /*Стили для левой стрелки*/
+    margin-left: 60px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.right:active, .left:active{    /*Стили при клике на кнопки прокрутки*/
+    background-color: #88543a;
+    border-color: #ffffff;
+}
+.right:active #right,.left:active #left{       /*Стрелки становятся белыми при клике в любом месте по площади всего блока*/
+    border-color: #ffffff;
+}
+.right i{           /*Уникальный стиль для правой кнопки*/
+    transform: rotate(-45deg);
+}
+.left i{            /*Уникальный стиль для левой кнопки*/
+    transform: rotate(135deg);
+}
+.block11 {           /*Стили для блока Content, Information...*/
+    background-color: #1b2c33;
+    height: 300px;
+    color: #ffffff;
+}
+.block11 span{           /*Стили для текста блока Content, Information...*/
+    font-size: 20px;
+    position: absolute;
+    padding-left: 6%;  /*Отступы для первого текстового блока*/
+    padding-top: 75px;
+    text-align: left;
+}
+.block11 span p{         /*Стили для текста в блоке статистики*/
+    width: 180px;
+    padding-top: 40px;
+}
+span.block11b{
+    padding-left: 26%;  /*Отступы для второго блока*/
+}
+span.block11c{
+    padding-left: 47%;  /*Отступы для третьего блока*/
+}
+span.block11d{
+    padding-left: 65%;  /*Отступы для четвертого блока*/
+}
+span.block11e{
+    padding-left: 82%;  /*Отступы для блока с номером телефона*/
+    padding-top: 80px;
+    font-size: 12px;
+}
+span.block11e p,span.block11f p{
+    width: 112px;
+    padding-left: 35px;
+}
+span.block11f{
+    padding-left: 82%;  /*Отступы для блока с номером телефона*/
+    padding-top: 140px;
+    font-size: 12px;
+}
+.phone,.map{
+    position: absolute;
+    padding-top: 40px;
+}
+.footer{
+    background-color: #000000;
+    color: #ffffff;
+    height: 90px;
+}
+.footer span{
+    padding-left: 170px;
+    padding-top: 35px;
 }

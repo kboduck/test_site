@@ -7,4 +7,4 @@ window.addEventListener('scroll', e => {
     else{
         navbar.remove(active_class);
     }
-})
+});
