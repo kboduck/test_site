@@ -2,7 +2,10 @@
 *{
     margin: 0;
 }
-div#head{ /*Шапка сайта*/
+h2{
+    text-transform: uppercase;
+}
+div#header{ /*Шапка сайта*/
     font-size: 20px;
     margin-left: 60px;
     background-color: #ffffff;
@@ -10,7 +13,7 @@ div#head{ /*Шапка сайта*/
     line-height: 120px;
     color: #e3a68b;
 }
-.header{
+.menu{
     font-size: 15pt;
     z-index: 10;
     padding-left: 15px;
@@ -20,18 +23,18 @@ div#head{ /*Шапка сайта*/
     display: flex;
     align-items: center;
 }
-.header_scrolled{
+.menu_scrolled{
     position: fixed;
     top: 0;
 }
-.header a{   /*Селекторы главного меню*/
+.menu a{   /*Селекторы главного меню*/
     margin-left: 45px;
     height: 80px;
     line-height: 80px;
     text-decoration: none;
     color: #ffffff;
 }
-.header a:active, .header a:hover{
+.menu a:active, .menu a:hover{
     background-color: #7d9097;
     color: #302f2f;
     transition: all .09s ease-out;
@@ -52,6 +55,7 @@ h3.block1{      /*Your company name*/
     padding-left: 65%;
     padding-bottom: 120px;
     font-size: 35px;
+    text-transform: uppercase;
 }
 div.block2{     /*Блок 2 содержит текст Our team leaders и три картинки*/
     background-color: #ffffff;
@@ -99,10 +103,11 @@ figcaption{             /*Стили для блока с текстом под�
 }
 .block3 span{           /*Стили для текста блока со статистикой*/
     color: #88553b;
-    font-size: 45px;
+    font-size: 60px;
     position: absolute;
     padding-left: 18%;  /*Отступы для первого текстового блока*/
     padding-top: 120px;
+    text-align: center;
 }
 span.block3a{
     padding-left: 39%;  /*Отступы для второго блока*/
@@ -117,6 +122,7 @@ span.block3c{
     color: #ffffff;
     font-size: 20px;
     text-align: center;
+    text-transform: uppercase;
 }
 .block5{                /*Блок "Contact us", содержит поля ввода*/
     background-color: #2a3e47;
@@ -128,16 +134,21 @@ span.block3c{
     text-align: center;
     padding-top: 310px;
 }
-.block5 span{   /*Текст после заголовка Contact us*/
+.block5 span p{   /*Текст после заголовка Contact us*/
     color: #c0c0c0;
     padding-left: 31%;
+    padding-top: 70px;
     width: 750px;
     height: 65px;
+    font-size: 25px;
 }
 input{  /*Поля ввода текста*/
     height: 50px;
     width: 26%;
     margin-bottom: 70px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #c0c0c0;
 }
 input[name="name"]{
     margin-left: 24%;
@@ -193,11 +204,69 @@ button[name="contact"]{
 .block7 span{
     padding-left: 23%;
     padding-top: 40px;
-    width: 64%;
-    height: 50px;
 }
-.block7a,.block7b,.block7c{
-    margin-top: 325px;
+.block7 img{
+    position: absolute;
+    padding-top: 70px;
+    padding-left: 12%;
+    z-index: 10;
+}
+span.block7 p{
+    position: absolute;
+    border: none;
+    border-left: 2px solid #000000;
+    margin-top: 205px;
+    margin-left: 21.5%;
+    height: 40px;
+}
+span.block7 p.img9{
+    margin-left: 51.3%;
+}
+span.block7 p.img10{
+    margin-left: 82.3%;
+}   
+span p.block7p{
+    position: relative;
+    padding-left: 23%;
+    margin-top: 10px;
+    border: none;
+    margin-left: 0;
+    height: auto;
+    width: 67%;
+
+}
+img.img9{
+    padding-left: 42%;
+}
+img.img10{
+    padding-left: 73%;
+}
+span.block7a,.block7b,.block7c{
+    position: absolute;
+    margin-top: 245px;
+    margin-left: 5%;
+    padding: 0;
+    border: solid;
+    border-radius: 1px;
+    width: 31%;
+    text-align: center;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+span.block7b{
+    margin-left: 40%;
+    padding: 0;
+    width: 24%;
+    height: 65px;
+}
+span.block7c{
+    margin-left: 68%;
+    padding: 0;
+    width: 28%;
+    height: 65px;
 }
 .block8{        /*Блок Our gallery*/
     height: 605px;
@@ -265,10 +334,12 @@ button[name="contact"]{
     padding-left: 6%;  /*Отступы для первого текстового блока*/
     padding-top: 75px;
     text-align: left;
+    text-transform: uppercase;
 }
 .block11 span p{         /*Стили для текста в блоке статистики*/
     width: 180px;
     padding-top: 40px;
+    text-transform: none;
 }
 span.block11b{
     padding-left: 26%;  /*Отступы для второго блока*/
