@@ -15,7 +15,7 @@ div#header{ /*Шапка сайта*/
 }
 .menu{
     font-size: 15pt;
-    z-index: 10;
+    z-index: 12;
     padding-left: 15px;
     background-color: #898d8e;
     height: 80px;
